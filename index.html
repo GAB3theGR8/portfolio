@@ -14,14 +14,14 @@
     <div class="Container">
         <div class="navbar">
             <img src="images/signature.png" class="logo">
-            <nav>
+            <div class="nav">
                 <ul id="menuList">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
             <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
         </div>
 
@@ -146,7 +146,7 @@
 
         function togglemenu () {
             if(menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "130px"
+                menuList.style.maxHeight = "100%"
             }
             else {
                 menuList.style.maxHeight = "0px"
