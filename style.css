@@ -149,6 +149,11 @@ nav ul li a {
     z-index: 1;
 }
 
+.pfpBox:hover:after {
+    opacity: 0;
+    transition: 0.5s;
+}
+
 .pfpContent {
     position: absolute;
     inset: 30px;
@@ -176,7 +181,7 @@ nav ul li a {
     position: relative;
     font-size: 1.5em;
     text-align: center;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
