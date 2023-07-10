@@ -391,10 +391,6 @@
         display: block;
     }
 
-    .menu-icon:onclick:after {
-        transform: rotate(45deg);
-    }
-
     #menuList {
         overflow: hidden;
         transition: 0.5s;
