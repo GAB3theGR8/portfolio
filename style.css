@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+.Container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    margin: 30px 0;
+    filter: invert(100%);
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.icons {
+    width: 30px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.profileSummary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.profileCol-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.profileCol-1 h1 {
+    margin: 20px 0 10px;
+}
+
+.links ul li {
+    flex: 1;
+    list-style: none;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.techIcons ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.techIcons ul li {
+    flex: 1;
+    list-style: none;
+    margin-left: 0px;
+}
+
+.profileCol-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pfpBox {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pfpBox::before {
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.pfpBox:hover::before {
+    inset: -20px 0px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pfpBox::after {
+    content: '';
+    position: absolute;
+    inset: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pfpContent {
+    position: absolute;
+    inset: 30px;
+    border: 6px solid #070a1c;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pfpContent img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.pfpContent h2 {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.pfpContent h2 span {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.pfpBox:hover .pfpContent img {
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.pfpBox:hover .pfpContent h2 {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.pfpContent a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.pfpBox:hover:after .pfpContent a {
+    z-index: 4;
+}
+
+
+.pfpContent a:hover {
+    letter-spacing: 0.2em;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 77%;
+    margin: auto;
+    padding: 10px;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 20px;
+}
+
+.hotelSite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.hotelCol-1 {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.hotelCol-1 img {
+    width: 500px;
+}
+
+.hotelCol-2 {
+    flex-basis: 40%;
+    position: relative;
+    text-align: center;
+}
+
+.hotelCol-2 ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.cryptoSite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cryptoCol-1 {
+    flex-basis: 40%;
+    position: relative;
+    text-align: center;
+}
+
+.cryptoCol-2 {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.cryptoCol-2 img {
+    width: 500px;
+}
+
+.cryptoCol-1 ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.ecommerceSite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.ecommerceCol-1 {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.ecommerceCol-1 img {
+    width: 500px;
+}
+
+.ecommerceCol-2 {
+    flex-basis: 40%;
+    position: relative;
+    text-align: center;
+}
+
+.ecommerceCol-2 ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.social-links img {
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
+}
+
+@media only screen and (max-width:700px){
+
+    nav ul {
+        background: linear-gradient(-135deg, #00ccff, #d400d4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        top: 100px;
+        right: 0; 
+        text-align: center;
+        z-index: 4;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 0px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .profileSummary {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .profileCol-1 {
+        flex-basis: 100%;
+        position: relative;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .about {
+        justify-content: center;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .portfolio {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio h4 {
+        font-size: 0.85em;
+        font-weight: 600;
+    }
+
+    .hotelSite {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .cryptoSite {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .ecommerceSite {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
