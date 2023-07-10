@@ -11,7 +11,18 @@
     padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.divider {
+    width: 80%;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 30px;
+    opacity: 0;
+ }
 
 .navbar {
     width: 100%;
@@ -216,22 +227,23 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: right;
+    text-align: left;
     width: 77%;
     margin: auto;
     padding: 10px;
 }
 
 .portfolio {
-    text-align: center;
+    text-align: right;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 .hotelSite {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
+    margin-bottom: 50px;
 }
 
 .hotelCol-1 {
@@ -260,6 +272,7 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .cryptoCol-1 {
@@ -288,7 +301,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
+    margin-bottom: 50px;
 }
 
 .ecommerceCol-1 {
@@ -391,8 +404,9 @@ nav ul li a {
     }
 
     .portfolio {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
     .portfolio h4 {
@@ -404,14 +418,14 @@ nav ul li a {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .cryptoSite {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .ecommerceSite {
