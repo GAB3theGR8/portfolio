@@ -327,8 +327,8 @@ nav ul li a {
     .Container {
         width: 100%;
         min-height: 100vh;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     nav ul {
