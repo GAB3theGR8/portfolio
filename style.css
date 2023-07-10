@@ -370,6 +370,10 @@ nav ul li a {
         text-align: center;
     }
 
+    .pfpBox {
+        margin-left: 0px;
+    }
+
     .about {
         justify-content: center;
         text-align: center;
