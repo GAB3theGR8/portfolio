@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="navbar">
+            <img src="images/signature.png" class="logo">
+            <div class="nav">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="about">
+            <h1>About Me</h1>
+            <h3>Experienced front end developer based in Cork, Ireland</h3>
+            <p>As an experienced front end developer of 10+ years, I possess an impressive myriad of skills ranging from HTML, CSS, JavaScript, React, Tailwind, and SCSS. My passion is to design and maintain responsive websites that offer a silky smooth user experience. My expertise lies in writing clean code to craft dynamic, engaging interfaces and adapting to utilize cutting-edge technology and methods. I'm a strong team player who loves to collaborate and am very comfortable working independently to produce outstanding websites and web-based applications. I have just recently moved to Cork from Memphis, TN and possess a Stamp 4 visa which allows me to work in Ireland.</p>
+        </div>
+    </div>
+    <script>var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu () {
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "100%"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    
+</body>
+</html>
