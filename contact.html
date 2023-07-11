@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    
+    <div class="Container">
+        <div class="navbar">
+            <img src="images/signature.png" class="logo">
+            <div class="nav">
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+    </div>
+
+    <script>var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu () {
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "100%"
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 </html>
